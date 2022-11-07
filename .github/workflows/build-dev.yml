@@ -26,7 +26,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: set lower case owner name
-          run: echo "REPO_LC=${REPO,,}" >>${GITHUB_ENV}
+          run: | echo "REPO_LC=${REPO,,}" >>${GITHUB_ENV}
           env:
             REPO: '${{ github.repository }}'
 
