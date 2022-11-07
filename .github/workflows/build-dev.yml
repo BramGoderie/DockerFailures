@@ -39,5 +39,5 @@ jobs:
         with:
           context: DockerFailures
           push: true
-          tags: v1, ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
