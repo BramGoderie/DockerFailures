@@ -39,4 +39,4 @@ jobs:
         with:
           context: DockerFailures
           push: true
-          tags: v1
+          tags: ${{ env.REGISTRY }}/${{ github.repository }}/server:${{ github.sha }}
